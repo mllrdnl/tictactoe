@@ -1,24 +1,34 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
-import "../../styles/home.scss";
+import "../../styles/styles.css";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-			<div className="alert alert-info">{store.message || "Loading message from the backend..."}</div>
-			<p>
-				This boilerplate comes with lots of documentation:{" "}
-				<a href="https://github.com/4GeeksAcademy/react-flask-hello/tree/95e0540bd1422249c3004f149825285118594325/docs">
-					Read documentation
-				</a>
-			</p>
+		<div className="container">
+			<div className="rowone">
+				<div className="left" />
+				<div className="boxone">one</div>
+				<div className="boxtwo">two</div>
+				<div className="boxthree">three</div>
+				<div className="right" />
+			</div>
+			<div className="rowtwo">
+				<div className="left" />
+				<div className="boxfour">four</div>
+				<div className="boxfive">five</div>
+				<div className="boxsix">six</div>
+				<div className="right" />
+			</div>
+			<div className="rowthree">
+				<div className="left" />
+				<div className="boxseven">seven</div>
+				<div className="boxeight">eight</div>
+				<div className="boxnine">nine</div>
+				<div className="right" />
+			</div>
 		</div>
 	);
 };
