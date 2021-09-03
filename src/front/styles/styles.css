@@ -2,21 +2,10 @@ body {
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
 
-.container {
+.game-board {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-}
-
-.rowone {
-    margin-top: 75px;
-}
-
-.rowone, .rowtwo, .rowthree {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .boxone, .boxfour, .boxseven {

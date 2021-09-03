@@ -1,33 +1,29 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
-import "../../styles/styles.css";
+import "../../styles/styles2.css";
 
 export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container">
-			<div className="rowone">
-				<div className="left" />
-				<div className="boxone">one</div>
-				<div className="boxtwo">two</div>
-				<div className="boxthree">three</div>
-				<div className="right" />
+		<div className="game-board">
+			<div data-cell className="cell">
+				<i className="fas fa-times" />
 			</div>
-			<div className="rowtwo">
-				<div className="left" />
-				<div className="boxfour">four</div>
-				<div className="boxfive">five</div>
-				<div className="boxsix">six</div>
-				<div className="right" />
+			<div data-cell className="cell">
+				<i className="far fa-circle" />
 			</div>
-			<div className="rowthree">
-				<div className="left" />
-				<div className="boxseven">seven</div>
-				<div className="boxeight">eight</div>
-				<div className="boxnine">nine</div>
-				<div className="right" />
+			<div data-cell className="cell" />
+			<div data-cell className="cell" />
+			<div data-cell className="cell" />
+			<div data-cell className="cell" />
+			<div data-cell className="cell" />
+			<div data-cell className="cell" />
+			<div data-cell className="cell" />
+
+			<div className="winning-message" id="winningMessage">
+				<div data-winning-message-text />
+				<button id="restart">Restart</button>
 			</div>
 		</div>
 	);
